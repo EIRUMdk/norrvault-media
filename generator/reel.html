@@ -1,0 +1,85 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}html,body{margin:0}
+body{width:1080px;height:1920px;background:#0B0F14;color:#E9EEF1;font-family:Manrope,sans-serif;overflow:hidden;position:relative}
+.d{font-family:'Space Grotesk',sans-serif;font-weight:500}.sf{font-family:'Instrument Serif',serif;font-style:italic}
+.blob{position:absolute;border-radius:50%;filter:blur(120px)}
+.scene{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:0 96px}
+.ey{font-size:30px;letter-spacing:.24em;color:#9FD4E6;text-transform:uppercase}
+.big{font-size:104px;line-height:1.02;margin:0;letter-spacing:-.01em}
+.pt{display:flex;gap:28px;align-items:baseline;font-size:46px;line-height:1.35}
+.pt .n{color:#C2A36B;font-size:34px;min-width:60px}
+.code{background:#141C26;border:1px solid #243140;border-radius:28px;padding:48px;font-family:'JetBrains Mono',monospace;font-size:31px;line-height:1.6;color:#D6DEE4;min-height:760px}
+.cur{display:inline-block;width:16px;height:36px;background:#9FD4E6;vertical-align:-6px;margin-left:2px}
+.phone{width:640px;height:1240px;margin:0 auto;border-radius:72px;border:2px solid #2A3644;background:#0F151D;box-shadow:0 60px 140px -40px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.06);padding:56px 40px;display:flex;flex-direction:column;gap:22px;position:relative}
+.card{background:#141C26;border:1px solid #1F2A36;border-radius:28px;padding:30px;display:flex;gap:22px;align-items:center}
+.card .ic{width:64px;height:64px;border-radius:20px;background:#1C2733;display:flex;align-items:center;justify-content:center;flex:none}
+.card .t{font-size:32px}.card .x{font-size:23px;color:#A9B4BD;margin-top:4px;line-height:1.4}
+.btn{height:96px;border-radius:999px;background:linear-gradient(180deg,#C2E6F2 0%,#9FD4E6 55%,#86C2D6 100%);color:#0B0F14;font-weight:600;font-size:34px;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -3px 0 rgba(11,15,20,.18),0 14px 40px -10px rgba(159,212,230,.6)}
+.price{border:1px solid #1F2A36;border-radius:28px;padding:40px;display:flex;justify-content:space-between;align-items:baseline}
+</style></head><body>
+<div class="blob" id="b1" style="width:900px;height:600px;background:#9FD4E6;opacity:.18"></div>
+<div class="blob" id="b2" style="width:760px;height:520px;background:#2F6F80;opacity:.28"></div>
+<div class="blob" id="b3" style="width:620px;height:420px;background:#C2A36B;opacity:.12"></div>
+<div id="top" style="position:absolute;top:150px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center;font-size:26px;letter-spacing:.32em" class="d"><span id="brand"></span><span id="vno" style="color:#8A97A3;letter-spacing:.14em"></span></div>
+
+<div class="scene" id="s1"><div class="ey" id="s1e">AI business idea</div><h1 class="big d" id="s1h" style="margin-top:40px"></h1><div class="sf" id="s1s" style="font-size:58px;color:#C2A36B;margin-top:44px"></div></div>
+<div class="scene" id="s2"><div class="ey">Who has the problem</div><h2 class="big d" id="s2h" style="font-size:84px;margin:36px 0 56px"></h2><div id="s2p" style="display:flex;flex-direction:column;gap:36px"></div></div>
+<div class="scene" id="s3"><div class="ey">The idea</div><h2 class="big d" id="s3h" style="margin:36px 0 0"></h2><div class="sf" id="s3s" style="font-size:62px;color:#C2A36B;margin-top:40px"></div><div id="s3c" style="display:flex;gap:16px;margin-top:64px"></div></div>
+<div class="scene" id="s4"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:36px"><div class="ey">The build prompt</div><div id="s4l" style="font-size:28px;color:#C2A36B"></div></div><div class="code"><span id="s4t"></span><span class="cur" id="s4c"></span></div></div>
+<div class="scene" id="s5"><div class="phone" id="ph"><div style="display:flex;justify-content:space-between;align-items:center;padding:0 8px 18px;border-bottom:1px solid #1F2A36"><div class="d" id="s5n" style="font-size:38px"></div><div style="width:54px;height:54px;border-radius:50%;background:#1C2733"></div></div><div id="s5cards" style="display:flex;flex-direction:column;gap:22px;margin-top:10px"></div><div style="flex:1"></div><div class="card" id="s5r" style="border-color:#C2A36B;flex-direction:column;align-items:flex-start;gap:6px"><div style="font-size:22px;letter-spacing:.18em;color:#C2A36B">RESULT</div><div class="d" id="s5rt" style="font-size:40px"></div></div><div class="btn" id="s5b"></div></div></div>
+<div class="scene" id="s6"><div class="ey">Who pays</div><div class="d" id="s6w" style="font-size:54px;line-height:1.3;margin:36px 0 56px"></div><div id="s6p" style="display:flex;flex-direction:column;gap:22px"></div><div class="sf" id="s6b" style="font-size:52px;color:#C2A36B;margin-top:56px"></div></div>
+<div class="scene" id="s7" style="align-items:center;text-align:center"><div id="s7m"></div><h2 class="big d" style="font-size:92px;margin:72px 0 0">Full build prompt<br>on the carousel.</h2><div class="sf" style="font-size:58px;color:#C2A36B;margin-top:48px">New ideas every week.</div><div class="d" style="font-size:40px;color:#9FD4E6;margin-top:72px;letter-spacing:.06em">Follow @norrvault</div></div>
+<script>
+const MARK=(s,c)=>`<svg width="${s}" height="${s}" viewBox="0 0 96 96"><rect x="6" y="6" width="84" height="84" rx="22" fill="none" stroke="#E9EEF1" stroke-width="4"/><path d="M32 68V28l32 40V28" fill="none" stroke="#E9EEF1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="72" cy="24" r="6" fill="${c||'#9FD4E6'}"/></svg>`;
+const CHECK=`<svg width="34" height="34" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#9FD4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const I=window.IDEA;
+const appName=(I.build_prompt.match(/called ([A-Z][\w]*(?: [A-Z][\w]*)?)/)||[,'App'])[1];
+const firstSent=s=>s.split(/(?<=\.)\s/)[0];
+const lastSent=s=>{const a=s.split(/(?<=\.)\s/);return a[a.length-1]};
+const unit=p=>(p.includes('/')||I.model==='One-time')?esc(p):esc(p)+'<span style="font-size:30px;color:#8A97A3"> /mo</span>';
+// static content
+$('brand').innerHTML='<span style="display:inline-flex;align-items:center;gap:18px">'+MARK(52)+'NORRVAULT</span>';
+$('vno').textContent='VAULT NO. '+I.no;
+$('s1h').textContent=I.problem.headline;
+$('s1s').textContent='Here is an AI business that fixes it.';
+$('s2h').textContent=I.who_pays.split(':')[0].split('.')[0].length<60?I.who_pays.split(':')[0].split('.')[0]+'.':'Who has this problem?';
+$('s2p').innerHTML=I.problem.points.map((p,k)=>`<div class="pt" id="p${k}"><div class="n d">0${k+1}</div><div>${esc(p)}</div></div>`).join('');
+$('s3h').textContent=I.title;$('s3s').textContent=I.hook;
+$('s3c').innerHTML=[['Build time',I.build_time],['Model',I.model==='Subscription'?'Monthly':I.model],['Stack',I.lead_tool]].map(([a,b],k)=>`<div id="c${k}" style="flex:1;border:1px solid #1F2A36;border-radius:22px;padding:26px"><div style="font-size:22px;color:#8A97A3">${a}</div><div class="d" style="font-size:36px;margin-top:8px">${esc(b)}</div></div>`).join('');
+$('s4l').textContent='Paste into '+I.lead_tool;
+$('s5n').textContent=appName;
+$('s5cards').innerHTML=I.how.steps.map((s,k)=>`<div class="card" id="k${k}"><div class="ic d" style="color:#C2A36B;font-size:30px" id="ki${k}">${k+1}</div><div><div class="t d">${esc(s.title)}</div><div class="x">${esc(s.text)}</div></div></div>`).join('');
+$('s5rt').textContent=lastSent(I.hook);
+$('s5b').textContent='Send';
+$('s6w').textContent=I.who_pays;
+$('s6p').innerHTML=I.pricing.map((p,k)=>`<div class="price" id="pr${k}" style="${k?'border-color:#C2A36B':''}"><div style="font-size:30px;letter-spacing:.12em;text-transform:uppercase;color:${k?'#C2A36B':'#8A97A3'}">${esc(p.tier)}</div><div class="d" style="font-size:64px">${unit(p.price)}</div></div>`).join('');
+$('s6b').textContent=I.payback_line;
+$('s7m').innerHTML=MARK(200);
+const SC=[['s1',0,3.6],['s2',3.6,8.8],['s3',8.8,12.6],['s4',12.6,19.8],['s5',19.8,28.2],['s6',28.2,32.6],['s7',32.6,36]];
+window.TOTAL=36;window.SCENES=SC.map(s=>[s[1],s[2]]);
+const show=(el,p,dy=40)=>{el.style.opacity=ease(p);el.style.transform=`translateY(${(1-ease(p))*dy}px)`};
+window.render=function(t){
+  $('b1').style.left=(560+Math.sin(t/5)*90)+'px';$('b1').style.top=(-180+Math.cos(t/6)*70)+'px';
+  $('b2').style.left=(60+Math.cos(t/7)*110)+'px';$('b2').style.top=(1200+Math.sin(t/6)*90)+'px';
+  $('b3').style.left=(620+Math.sin(t/8)*80)+'px';$('b3').style.top=(1500+Math.cos(t/5)*60)+'px';
+  $('top').style.opacity=t<32.6?1:0;
+  for(const [id,a,b] of SC){const el=$(id);if(t>=a&&t<b){el.style.display='flex';const l=t-a,fo=clamp((b-t)/0.3);el.style.opacity=Math.min(clamp(l/0.3),id==='s7'?1:fo);scene(id,l,b-a)}else el.style.display='none'}
+};
+function scene(id,l,dur){
+  if(id==='s1'){show($('s1e'),l/0.5);show($('s1h'),(l-0.2)/0.7,60);show($('s1s'),(l-1.2)/0.6)}
+  if(id==='s2'){show($('s2h'),l/0.6);I.problem.points.forEach((_,k)=>show($('p'+k),(l-0.9-k*1.0)/0.5,30))}
+  if(id==='s3'){show($('s3h'),l/0.6,60);show($('s3s'),(l-0.7)/0.5);[0,1,2].forEach(k=>show($('c'+k),(l-1.4-k*0.25)/0.4,24))}
+  if(id==='s4'){const n=Math.floor(clamp((l-0.4)/5.6)*I.build_prompt.length);$('s4t').textContent=I.build_prompt.slice(0,n);$('s4c').style.opacity=(Math.floor(l*2.5)%2&&n>=I.build_prompt.length)?0:1}
+  if(id==='s5'){const ph=$('ph');const p=ease(l/0.7);ph.style.transform=`translateY(${(1-p)*120}px) scale(${0.94+0.06*p})`;ph.style.opacity=p;
+    I.how.steps.forEach((_,k)=>{const st=0.9+k*1.3;show($('k'+k),(l-st)/0.45,30);const done=l>st+0.9;$('ki'+k).innerHTML=done?CHECK:(k+1);$('ki'+k).style.background=done?'#16323B':'#1C2733'});
+    show($('s5r'),(l-5.0)/0.5,30);const b=$('s5b');show(b,(l-5.5)/0.4,20);
+    const press=l>6.4&&l<6.7;b.style.transform+=press?' scale(0.96)':'';b.textContent=l>6.7?'Sent ✓':'Send'}
+  if(id==='s6'){show($('s6w'),l/0.6);I.pricing.forEach((_,k)=>show($('pr'+k),(l-0.8-k*0.4)/0.45,30));show($('s6b'),(l-2.0)/0.6)}
+  if(id==='s7'){show($('s7m'),l/0.6,30)}
+}
+render(0);document.body.setAttribute('data-ready','1');
+</script></body></html>
