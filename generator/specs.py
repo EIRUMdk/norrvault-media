@@ -62,7 +62,7 @@ SPECS = {
  'sj006': dict(vno='SELL THE JOB · 2/3', mode='job', vault='006',
    hook="Landlords don't want a repair desk. They want repairs handled.",
    proof=dict(app='FixDesk', rows=[['Leaking tap, flat B','Urgent'],['Work order','Sent to plumber'],['Status','Fixed ✓']], result='Fixed. No late-night texts.'),
-   versus=['A repair request desk.','Repairs handled.'],
+   versus=['A repair desk.','Repairs handled.'],
    prob_head='Sell the job, not the tool.',
    points=['Repair requests come in by text, call and email.','Urgent and cosmetic issues look the same at first.','The tool is a cost. A fixed leak is the job.'],
    idea='Priced by the job: a repair closed.', idea_sub='Same build. A different pitch.',
